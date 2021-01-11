@@ -25,7 +25,7 @@ btn1.onclick = function(){
         tocando = false
         color = '#383535'
         body.style.backgroundColor = color
-    }, 37000)
+    }, 37068)
 }
 
 btn2.onclick = function(){
@@ -50,13 +50,16 @@ var generateColor = setInterval(function() {
         for(let i = 0; i<6; i++){
         index = Math.floor(Math.random() * 6 + 1)
         color += hexElements[index]
-        console.log(hexElements[index])
+        // console.log(hexElements[index])
         }
-        console.log(color)
+        // console.log(color)
         body.style.backgroundColor = color
         color = '#'
     }
-}, 100);
+}, 200);
 
+var showCurrentTime = setInterval( function() {
+    console.log('Current time: '+audio.currentTime)
+}, 1000)
 
 
